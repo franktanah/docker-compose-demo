@@ -5,8 +5,8 @@ services:
     labels:
       - "traefik.frontend.rule=Host:whoami.docker.localhost"
 
-  redis:
-    image: redis
+  mongo:
+    image: mongo
 
     networks:
       - back-tier
